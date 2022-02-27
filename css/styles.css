@@ -2,20 +2,29 @@
 body {
     font-family: 'Gilroy-Medium', sans-serif !important;
 }
+
 /* widths */
 .fit-content {
     width: fit-content;
 }
+
+/* image fit */
+.object-fit--cover {
+    object-fit: cover !important;
+}
+
 /* fontsizes */
 .fsize-4rem {
     font-size: 3.5rem;
 }
+
 /* navbar */
 .dropdown-submenu {
     position: relative;
 }
+
 .nav-item>a {
-    color: rgba(255,255,255,1) !important;
+    color: rgba(255, 255, 255, 1) !important;
     opacity: 1 !important;
 }
 
@@ -48,4 +57,9 @@ li.nav-item {
     li.nav-item {
         max-width: 100%;
     }
+
+    .carousel, .carousel-inner, .carousel-item {
+        height: 100vh;
+    }
+
 }
