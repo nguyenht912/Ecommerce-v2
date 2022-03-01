@@ -22,9 +22,9 @@
         <!-- Start screen -->
         <div class="start-screen">
             <nav class="navbar navbar-expand-sm bg-transparent navbar-dark fixed-top">
-                <div class="container-fluid">
+                <div class="container-fluid margined">
                     <a class="navbar-brand text-black fs-6 fs-sm-4 fw-bolder" href="#">Nordic Coder</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -109,7 +109,7 @@
             <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
                 <!-- Indicators/dots -->
-                <div class="carousel-indicators">
+                <div class="carousel-indicators w-50 mx-auto">
                     <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                     <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                     <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
@@ -118,56 +118,234 @@
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/background-girl.jpg" alt="Los Angeles" class="d-block w-100">
+                        <img src="img/background-girl.jpg" alt="Los Angeles" class="d-block">
                         <div
-                            class="d-none carousel-caption start-0 end-0 d-md-flex h-100 w-100 justify-content-end align-items-center pe-5">
+                            class="d-none carousel-caption start-0 end-0 d-lg-flex h-100 w-100 justify-content-end align-items-center pe-5">
                             <p class="fsize-4rem pe-5 me-5 fw-bolder text-black">R E V E N</p>
                         </div>
-                        <div class="carousel-caption d-md-none ">
+                        <div class="carousel-caption d-lg-none ">
                             <p class="fw-bolder fit-content bg-black mx-auto">R E V E N</p>
                         </div>
                     </div>
-                    <!-- <div class="carousel-item">
-                        <img src="img/background-girl-1.png" alt="Chicago" class="d-block img-fluid w-100">
-                    </div>
+
                     <div class="carousel-item">
-                        <img src="img/background-girl-2.png" alt="New York" class="d-block img-fluid w-100">
-                    </div> -->
+                        <img src="img/background-girl-1.png" alt="Chicago" class="d-block">
+                        <div
+                            class="d-none carousel-caption start-0 end-0 d-lg-flex h-100 w-100 justify-content-center align-items-center ps-5">
+                            <p class="fsize-4rem pe-5 me-5 fw-bolder text-black">N E V E R</p>
+                        </div>
+                        <div class="carousel-caption d-lg-none ">
+                            <p class="fw-bolder fit-content bg-black mx-auto">N E V E R</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/background-girl-3.png" alt="New York" class="d-block">
+                        <div
+                            class="d-none carousel-caption start-0 end-0 d-lg-flex h-100 w-100 justify-content-start align-items-center ps-5">
+                            <p class="fsize-4rem pe-5 me-5 fw-bolder text-black">R E N E V</p>
+                        </div>
+                        <div class="carousel-caption d-lg-none ">
+                            <p class="fw-bolder fit-content bg-black mx-auto">R E N E V</p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
-                </button>
+                </button> -->
 
                 <!-- bottom nav and shop icon -->
                 <div class="position-absolute w-100 bottom-0 pb-2 d-flex justify-content-between">
-                    <div class="container d-flex align-items-center">
+                    <!-- <div class="container d-flex align-items-center">
                         <a href="#" class="text-black"><i class="fas fa-arrow-left fa-2x"></i></a>
                         <span class="px-2"></span>
                         <a href="#" class="text-black"><i class="fas fa-arrow-right fa-2x"></i></a>
+                    </div> -->
+
+                    <!-- Carousel controller next/prev -->
+                    <div class="container d-flex w-25 justify-content-start align-items-center col-gap-1">
+                        <button class="carousel-control-prev position-static px-3" type="button" data-bs-target="#demo"
+                            data-bs-slide="prev">
+                            <span class="">
+                                <i class="fas fa-arrow-left fa-2x text-black"></i>
+                            </span>
+                        </button>
+
+                        <button class="carousel-control-next position-static px-3 start-0" type="button"
+                            data-bs-target="#demo" data-bs-slide="next">
+                            <span class="">
+                                <i class="fas fa-arrow-right fa-2x text-black"></i>
+                            </span>
+                        </button>
                     </div>
-                    <div class="container d-flex justify-content-end align-items-center">
-                        <a href="#" class="text-decoration-none text-black">
-                            <p>Shop Now</p>
+
+                    <!-- Shop now icon -->
+                    <div class="container ">
+                        <a href="#"
+                            class="h-100 text-decoration-none d-flex flex-column flex-sm-row justify-content-center justify-content-sm-end align-items-end align-items-sm-center">
+                            <p class="shop-now">Shop Now</p>
+                            <span class="px-2"></span>
+                            <i class="shop-now fas fa-arrow-circle-right fa-2x d-none d-sm-inline-block"></i>
                         </a>
-                        <span class="px-2"></span>
-                        <a href="#" class="text-black"><i class="fas fa-arrow-circle-right fa-2x"></i></a>
                     </div>
                 </div>
             </div>
         </div>
 
+        <main class="container-fluid" style="min-height: 1000px; background-color: wheat;">
+            <!-- intro -->
+            <div class="margined pt-5">
+                <article class="w-100 border border-info d-flex flex-column flex-sm-row justify-content-between">
+                    <img src="img/img-girl-1.jpg" alt="" class="object-fit--cover">
+                    <p class="align-self-center fw-bold fs-1">Find your new look with the fresh fall fashion ideas.
+                    </p>
+                </article>
+
+                <div class="py-2 py-sm-4"></div>
+
+                <article class="w-100 border border-info d-flex flex-column flex-sm-row justify-content-between">
+                    <img src="img/img-girl-2.jpg" alt="" class="object-fit--cover order-sm-2">
+                    <p class="align-self-center fs-5">Amazing designs & collaborations, and as always 100%
+                        Organic & Fairtrade certified cotton. Inspired by the georgious
+                        Brasilian bucket, a wonderful serenity has taken possession of my entire soul, like these sweet
+                        mornings of spring
+                        which.
+                    </p>
+                </article>
 
 
+            </div>
+
+            <div class="margined pt-5">
+                <div class="text-center">
+                    <p class="fs-1 fw-bolder pb-2">
+                        Shop these outfit collections
+                    </p>
+                    <p>100% Organic & Fairtrade certified cotton</p>
+                </div>
+                <div>
+                    <div class="row row-cols-lg-3 row-cols-md-2 g-0 justify-content-between ">
+                        <div class="col-xl-auto  col-md-12 position-relative">
+                            <img src="img/img-collection-1.jpg" alt="" class="collection-item">
+                            <p class="position-absolute top-0 end-0 mx-4 my-4 fw-bold fs-5 text-white">MYSTERY</p>
+                        </div>
+                        <div class="col-xl-auto col-md-6 position-relative">
+                            <img src="img/img-collection-2.jpg" alt="" class="collection-item">
+                            <p class="position-absolute top-50 start-50 translate-middle fw-bold fs-5 text-white">
+                                DARLING</p>
+                        </div>
+                        <div class="col-xl-auto  col-md-6 position-relative">
+                            <img src="img/img-collection-3.jpg" alt="" class="collection-item">
+                            <p class="position-absolute bottom-0 start-0 mx-4 my-4 fw-bold fs-5 text-black">
+                                BEYOND</p>
+                        </div>
+                    </div>
+
+                    <div class="py-2"></div>
+
+                    <div class="row row-cols-lg-3 row-cols-md-2 g-0 justify-content-between ">
+                        <div class="col-xl-auto  col-md-12 position-relative order-3">
+                            <img src="img/img-collection-6.jpg" alt="" class="collection-item">
+                            <p class="position-absolute bottom-0 start-50 translate-middle fw-bold fs-5 text-white">NATURALISM</p>
+                        </div>
+                        <div class="col-xl-auto col-md-6 position-relative order-1">
+                            <img src="img/img-collection-4.jpg" alt="" class="collection-item">
+                            <p class="position-absolute bottom-0 end-0 mx-4 my-4 fw-bold fs-5 text-white">
+                                REVEN</p>
+                        </div>
+                        <div class="col-xl-auto  col-md-6 position-relative order-2">
+                            <img src="img/img-collection-5.jpg" alt="" class="collection-item">
+                            <p class="position-absolute top-50 end-0 translate-middle fw-bold fs-5 text-black">
+                                LE FEMININ</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
 
 
-        <div style="min-height: 1000px; background-color: wheat;"></div>
+        </main>
+        <footer class=" footer bg-gray6 pt-5">
+            <div class="row row-cols-2 row-cols-sm-4 margined">
 
-    </div>
+                <div class="col pe-0">
+                    <p class="pb-4 text-gray3">About us</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Our company</a>
+                        </li>
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Our history</a>
+                        </li>
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Contact</a>
+                        </li>
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Jobs</a></li>
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Journal</a>
+                        </li>
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Store
+                                Locations</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col pe-0">
+                    <p class="pb-4 text-gray3">How can we help</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">FAQs</a></li>
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Order
+                                tracking</a></li>
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Terms &
+                                Conditions</a>
+                        </li>
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Privacy
+                                Policy</a></li>
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Returns &
+                                Refunds</a>
+                        </li>
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Support</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col pe-0 pt-3 pt-sm-0">
+                    <p class="pb-4 text-gray3">Shop</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Tops</a></li>
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Accessories</a>
+                        </li>
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Jeans</a></li>
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Jackets</a>
+                        </li>
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Shoes</a></li>
+                    </ul>
+                </div>
+
+                <div class="col pe-0 pt-3 pt-sm-0">
+                    <p class="pb-4 text-gray3">Security system</p>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">PCI security
+                                standards</a>
+                        </li>
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Protect card
+                                owner</a>
+                        </li>
+                        <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Encrypted
+                                network</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="row margined">
+                <p class="text-gray3 py-5">Copyright © 2020 Nordic Coder. All rights reserved.</p>
+            </div>
+        </footer>
 </body>
 
 </html>
