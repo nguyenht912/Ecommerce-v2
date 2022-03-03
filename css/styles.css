@@ -3,6 +3,40 @@ body {
     font-family: 'Gilroy-Medium', sans-serif !important;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
+/* keyframes */
+@keyframes slide-in-bottom {
+    0% {
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+
+/* asda */
+.testfield1 {
+    background-color: bisque;
+    min-height: 500px;
+}
+
+.testfield2 {
+    background-color: turquoise;
+    min-height: 500px;
+}
+
+/* ------------------------------------- */
 /* margins */
 .ml-13 {
     margin-left: 13rem !important;
@@ -12,19 +46,30 @@ body {
     margin-right: 13rem !important;
 }
 
+/* ------------------------------------- */
 /*text colors */
 .text-purple1 {
     color: #9B51E0;
+}
+
+.text-green2 {
+    color: rgba(39, 174, 96, 1);
+
 }
 
 .text-gray3 {
     color: #828282 !important;
 }
 
+.text-gray4 {
+    color: rgba(189, 189, 189, 1);
+}
+
 .text-gray6 {
     color: rgba(242, 242, 242, 1) !important;
 }
 
+/* ------------------------------------- */
 /* bg colors */
 .bg-gray3 {
     background-color: #828282 !important;
@@ -38,18 +83,43 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* object-fit */
-
+/* ------------------------------------- */
 /* float and clear */
 .clear-start {
     clear: right;
 }
 
+/* list */
+.list-style-disc li::before {
+    content: "•";
+    padding-right: 0.75rem;
+    color: black;
+}
+
+.list-style-cross li::before {
+    content: "+";
+    padding-right: 0.75rem;
+    color: black;
+}
+
+
+
+.disc-orange li::before {
+    color: rgba(235, 87, 87, 1);
+
+}
+
+.padding-inline-start-1rem {
+    padding-inline-start: 1rem;
+}
+
+/* ------------------------------------- */
 /* flex */
 .col-gap-1 {
     column-gap: 0.5rem !important;
 }
 
+/* ------------------------------------- */
 /* widths */
 .vw-100--noscroll {
     width: calc(100vw - (100vw - 100%));
@@ -57,6 +127,10 @@ body {
 
 .fit-content {
     width: fit-content;
+}
+
+.minw-3rem {
+    min-width: 3rem;
 }
 
 .w-45 {
@@ -87,6 +161,13 @@ body {
     max-height: 73%;
 }
 
+/* ------------------------------------- */
+/* positions */
+.bottom-15 {
+    bottom: 15% !important;
+}
+
+/* ------------------------------------- */
 /* image fit */
 .object-fit--cover {
     object-fit: cover !important;
@@ -100,15 +181,21 @@ body {
     object-fit: scale-down !important;
 }
 
+/* ------------------------------------- */
 /* fontsizes */
 .fsize-4rem {
     font-size: 3.5rem;
 }
 
-/* navbar */
+.fsize-3rem {
+    font-size: 3rem;
+}
 
+
+/* ------------------------------------- */
+/* navbar */
 .start-screen .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .start-screen .custom-toggler.navbar-toggler {
@@ -116,12 +203,9 @@ body {
     border-width: 0.15rem;
 }
 
-
 .start-screen .dropdown-submenu {
     position: relative;
 }
-
-
 
 .start-screen .dropdown-submenu .dropdown-menu {
     top: 0;
@@ -146,17 +230,103 @@ body {
     height: 100vh;
 }
 
+/* ------------------------------------- */
 /* new customer email */
 .new-customer input[type="email"] {
     border-bottom: 1px solid #e0e0e0 !important;
     max-width: 40%;
 }
 
+.login-page input[type="email"i],
+.login-page input[type="password"i],
+.login-page input[type="text"i] {
+    padding-left: 0;
+}
+
+/* ------------------------------------- */
+/* filters */
+.listing--side-panel .navbar .navbar-toggler-icon,
+.listing--side-panel .navbar .custom-toggler {
+    background-image: none;
+    width: 100%;
+    height: auto;
+}
+
+.option--outer {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.option {
+    width: 1rem;
+    height: 1rem;
+}
+
+.chooseme:hover>.option--outer {
+    visibility: visible !important;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked+label>.option--outer {
+    visibility: visible !important;
+}
+
+/* ------------------------------------- */
+
+/* main-panel */
+/* sort bar */
+.listing--main-panel .dropdown .dropdown-toggle:after {
+    display: none;
+}
+
+/* add to cart */
+.listing--main-panel .card:hover>button,
+.related-products .card:hover>button {
+    visibility: visible !important;
+    animation-name: slide-in-bottom;
+    animation-duration: 0.75s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+.listing--main-panel .card button:hover,
+.related-products .card button:hover {
+    background-color: black !important;
+    border: 1px solid white !important;
+    color: white;
+}
+
+/* ------------------------------------- */
+/* pagination */
+.page-item {
+    width: 2rem;
+    height: 2rem;
+}
+
+.page-item:not(:last-of-type):hover {
+    background-color: #F2F2F2;
+
+}
+
+
+/* ------------------------------------- */
 /* footer */
 .footer div.col:last-of-type ul li {
     background: url(../img/icon-greencheck.svg) no-repeat left center;
     padding-left: 1.2rem;
 }
+
+/* detail */
+/* product picker */
+
+/* color and size picker */
+input[type="radio"]:checked+label>.option--outer {
+    visibility: visible !important;
+}
+
+/* ------------------------------------- */
+/* Responsive*/
+/* ------------------------------------- */
 
 /* //mobile */
 .margined {
@@ -204,6 +374,7 @@ main article>p {
     height: auto;
 }
 
+/* ------------------------------------- */
 /* tablet */
 
 @media only screen and (min-width:576px) {
@@ -265,7 +436,10 @@ main article>p {
     }
 }
 
+/* ------------------------------------- */
 /* desktops */
+@media only screen and (min-width:768px) {}
+
 @media only screen and (min-width:992px) {
     .margined {
         margin-left: 8rem !important;
@@ -278,8 +452,13 @@ main article>p {
         object-fit: cover;
         margin: 0;
     }
+
+    .thumbnails img {
+        width: 100%;
+    }
 }
 
+/* ------------------------------------- */
 /* larger */
 @media only screen and (min-width:1200px) {
     .collection-item {
@@ -290,6 +469,7 @@ main article>p {
     }
 }
 
+/* ------------------------------------- */
 /* larger desktop */
 @media only screen and (min-width:1400px) {
     .margined {

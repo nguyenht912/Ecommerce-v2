@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Listing</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Start screen -->
+        <div class="start-screen">
+            <nav class="navbar navbar-expand-sm bg-transparent navbar-dark fixed-top">
+                <div class="container-fluid px-0 margined">
+                    <a class="navbar-brand text-black fs-6 fs-sm-4 fw-bolder" href="#">Nordic Coder</a>
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-sm-end" id="collapsibleNavbar">
+                        <ul class="navbar-nav flex-row justify-content-around">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">New</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a href="#" id="menu" data-bs-toggle="dropdown"
+                                    class="nav-link dropdown-toggle btn lh-1 disabled border-0"
+                                    data-bs-display="static">Shop</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a href="#" data-bs-toggle="dropdown"
+                                            class="dropdown-item dropdown-toggle text-black">Tops</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#" class="dropdown-item">Julia</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item">Jaliu</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item">Jilau</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item">Jauli</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item">Juila</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#" data-bs-toggle="dropdown"
+                                            class="dropdown-item dropdown-toggle">Accessories</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#" class="dropdown-item">Jewellry</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item">Scarves</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown-item">Belts</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown-submenu">
+                                        <a href="#" class="dropdown-item">Jeans</a>
+                                    </li>
+
+                                    <li class="dropdown-submenu">
+                                        <a href="#" class="dropdown-item">Jackets</a>
+                                    </li>
+
+                                    <li class="dropdown-submenu">
+                                        <a href="#" class="dropdown-item">Shoes</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sale</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <main class="wrapper pt-5 mt-5">
+            <div class="row row-cols-1 row-cols-md-2 mx-0 margined">
+                <div class="listing--side-panel col col-md-3 px-md-0">
+                    <nav class="navbar navbar-expand-md navbar-light bg-white-opa-80">
+                        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon text-black fw-bold">Filter</span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <div class="row row-cols-1">
+                                <!-- filter category -->
+                                <div class="pb-5">
+                                    <p class="text-gray3 pb-4 fs-5">Filter by category</p>
+                                    <div class="">
+                                        <ul class="row row-cols-2 row-cols-md-1 gy-3">
+                                            <li>
+                                                <a href="#" class="text-black text-decoration-none">
+                                                    Tops
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-black text-decoration-none">Accessories
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-black text-decoration-none">Jeans
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-black text-decoration-none">Jackets
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-black text-decoration-none">Shoes
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- filter color -->
+                                <div class="pb-5">
+                                    <p class="text-gray3 pb-4 fs-5">Filter by color</p>
+                                    <div class="w-50">
+                                        <ul class="row row-cols-2 row-cols-sm-4 gy-3">
+                                            <li class="col">
+                                                <input hidden type="checkbox" id="choose-black" />
+                                                <label for="choose-black" class="chooseme">
+                                                    <div class="option--outer d-flex justify-content-center 
+                                                                    align-items-center flex-nowrap 
+                                                                    invisible rounded-circle bg-transparent"
+                                                        style="border: 2px solid black">
+                                                        <span class="option d-block visible rounded-circle"
+                                                            style="background-color: black;"></span>
+                                                    </div>
+                                                </label>
+                                            </li>
+
+                                            <li class="col">
+                                                <input hidden type="checkbox" id="choose-yellow" />
+                                                <label for="choose-yellow" class="chooseme">
+                                                    <div class="option--outer d-flex justify-content-center 
+                                                                    align-items-center flex-nowrap 
+                                                                    invisible rounded-circle bg-transparent"
+                                                        style="border: 2px solid  #f2c94c">
+                                                        <span class="option d-block visible rounded-circle"
+                                                            style="background-color: #f2c94c"></span>
+                                                    </div>
+                                                </label>
+                                            </li>
+
+                                            <li class="col">
+                                                <input hidden type="checkbox" id="choose-gray" />
+                                                <label for="choose-gray" class="chooseme">
+                                                    <div class="option--outer d-flex justify-content-center 
+                                                                    align-items-center flex-nowrap 
+                                                                    invisible rounded-circle bg-transparent"
+                                                        style="border: 2px solid  #e0e0e0">
+                                                        <span class="option d-block visible rounded-circle"
+                                                            style="background-color: #e0e0e0"></span>
+                                                    </div>
+                                                </label>
+                                            </li>
+
+                                            <li class="col">
+                                                <input hidden type="checkbox" id="choose-green" />
+                                                <label for="choose-green" class="chooseme">
+                                                    <div class="option--outer d-flex justify-content-center 
+                                                                    align-items-center flex-nowrap 
+                                                                    invisible rounded-circle bg-transparent"
+                                                        style="border: 2px solid  #219653">
+                                                        <span class="option d-block visible rounded-circle"
+                                                            style="background-color: #219653"></span>
+                                                    </div>
+                                                </label>
+                                            </li>
+
+                                            <li class="col">
+                                                <input hidden type="checkbox" id="choose-red" />
+                                                <label for="choose-red" class="chooseme">
+                                                    <div class="option--outer d-flex justify-content-center 
+                                                                    align-items-center flex-nowrap 
+                                                                    invisible rounded-circle bg-transparent"
+                                                        style="border: 2px solid  #eb5757">
+                                                        <span class="option d-block visible rounded-circle"
+                                                            style="background-color: #eb5757"></span>
+                                                    </div>
+                                                </label>
+                                            </li>
+
+                                            <li class="col">
+                                                <input hidden type="checkbox" id="choose-blue" />
+                                                <label for="choose-blue" class="chooseme">
+                                                    <div class="option--outer d-flex justify-content-center 
+                                                                    align-items-center flex-nowrap 
+                                                                    invisible rounded-circle bg-transparent"
+                                                        style="border: 2px solid  #2f80ed">
+                                                        <span class="option d-block visible rounded-circle"
+                                                            style="background-color: #2f80ed"></span>
+                                                    </div>
+                                                </label>
+                                            </li>
+
+                                            <li class="col">
+                                                <input hidden type="checkbox" id="choose-orange" />
+                                                <label for="choose-orange" class="chooseme">
+                                                    <div class="option--outer d-flex justify-content-center 
+                                                                    align-items-center flex-nowrap 
+                                                                    invisible rounded-circle bg-transparent"
+                                                        style="border: 2px solid  #f2994a">
+                                                        <span class="option d-block visible rounded-circle"
+                                                            style="background-color: #f2994a"></span>
+                                                    </div>
+                                                </label>
+                                            </li>
+
+                                            <li class="col">
+                                                <input hidden type="checkbox" id="choose-purple" />
+                                                <label for="choose-purple" class="chooseme">
+                                                    <div class="option--outer d-flex justify-content-center 
+                                                                    align-items-center flex-nowrap 
+                                                                    invisible rounded-circle bg-transparent"
+                                                        style="border: 2px solid  #9b51e0">
+                                                        <span class="option d-block visible rounded-circle"
+                                                            style="background-color: #9b51e0"></span>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- filter size -->
+                                <div>
+                                    <p class="text-gray3 pb-4 fs-5">Filter by size</p>
+                                    <div class="w-50">
+                                        <ul class="row row-cols-2 row-cols-sm-4 gy-3">
+                                            <li class="">
+                                                <input hidden type="checkbox" id="choose-xs" />
+                                                <label for="choose-xs" class="chooseme">
+                                                    <div class="option--outer d-flex justify-content-center 
+                                                                                align-items-center flex-nowrap 
+                                                                                invisible rounded-circle bg-transparent 
+                                                                                text-center align-middle"
+                                                        style="border: 2px solid black">
+                                                        <span
+                                                            class="option d-block visible rounded-circle 
+                                                                                    d-inline-flex justify-content-center align-items-center">XS</span>
+                                                    </div>
+                                                </label>
+                                            </li>
+
+                                            <li class="">
+                                                <input hidden type="checkbox" id="choose-xs" />
+                                                <label for="choose-xs" class="chooseme">
+                                                    <div class="option--outer d-flex justify-content-center 
+                                                                                align-items-center flex-nowrap 
+                                                                                invisible rounded-circle bg-transparent 
+                                                                                text-center align-middle"
+                                                        style="border: 2px solid black">
+                                                        <span
+                                                            class="option d-block visible rounded-circle 
+                                                                            d-inline-flex justify-content-center align-items-center">S</span>
+                                                    </div>
+                                                </label>
+                                            </li>
+
+                                            <li class="">
+                                                <input hidden type="checkbox" id="choose-xs" />
+                                                <label for="choose-xs" class="chooseme">
+                                                    <div class="option--outer d-flex justify-content-center 
+                                                                                align-items-center flex-nowrap 
+                                                                                invisible rounded-circle bg-transparent 
+                                                                                text-center align-middle"
+                                                        style="border: 2px solid black">
+                                                        <span
+                                                            class="option d-block visible rounded-circle 
+                                                                            d-inline-flex justify-content-center align-items-center">M</span>
+                                                    </div>
+                                                </label>
+                                            </li>
+
+                                            <li class="">
+                                                <input hidden type="checkbox" id="choose-xs" />
+                                                <label for="choose-xs" class="chooseme">
+                                                    <div class="option--outer d-flex justify-content-center 
+                                                                                align-items-center flex-nowrap 
+                                                                                invisible rounded-circle bg-transparent 
+                                                                                text-center align-middle"
+                                                        style="border: 2px solid black">
+                                                        <span
+                                                            class="option d-block visible rounded-circle 
+                                                                            d-inline-flex justify-content-center align-items-center">L</span>
+                                                    </div>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class=" listing--main-panel col col-md-9 px-md-0">
+                    <div class="pb-4">
+                        <p class="fs-1 fw-bold">Shop</p>
+                        <div class="row row-cols-1 row-cols-sm-2 gx-0 align-items-center">
+                            <p class="col text-gray3">Showing 1 - 12 of 24 results</p>
+                            <div class="dropdown col d-flex justify-content-end">
+                                <button class="btn w-50 bg-white border-secondary rounded-pill dropdown-toggle"
+                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <span class="pe-5">Sort by latest</span>
+                                    <i class="fa-solid fa-arrow-down"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Sort by latest</a></li>
+                                    <li><a class="dropdown-item" href="#">Sort by oldest</a></li>
+                                    <li><a class="dropdown-item" href="#">Sort by highest price</a></li>
+                                    <li><a class="dropdown-item" href="#">Sort by lowest price</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="row row-cols-1 row-cols-sm-2  row-cols-md-3 justify-content-center justify-content-sm-start">
+                        <div class="col-10 col-sm">
+                            <div class="card bg-transparent border-0">
+                                <img src="img/item-1.jpg" alt="">
+                                <div class="card-body px-0">
+                                    <p class="card-text fw-bolder">Julia</p>
+                                    <p class="card-text">€99.00 <span
+                                            class="text-gray3 text-decoration-line-through">€119.00</span></p>
+                                </div>
+                                <button class="btn fit-content bg-white border-0 rounded-pill px-4 py-3
+                                                position-absolute invisible">
+                                    <span class="pe-3">Add to cart</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm">
+                            <div class="card bg-transparent border-0">
+                                <img src="img/item-2.jpg" alt="">
+                                <div class="card-body px-0">
+                                    <p class="card-text fw-bolder">Julia</p>
+                                    <p class="card-text">€99.00 <span
+                                            class="text-gray3 text-decoration-line-through">€119.00</span></p>
+                                </div>
+                                <button class="btn fit-content bg-white border-0 rounded-pill px-4 py-3
+                                                                        position-absolute invisible">
+                                    <span class="pe-3">Add to cart</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm">
+                            <div class="card bg-transparent border-0">
+                                <img src="img/item-3.jpg" alt="">
+                                <div class="card-body px-0">
+                                    <p class="card-text fw-bolder">Julia</p>
+                                    <p class="card-text">€99.00 <span
+                                            class="text-gray3 text-decoration-line-through">€119.00</span></p>
+                                </div>
+                                <button class="btn fit-content bg-white border-0 rounded-pill px-4 py-3
+                                                                        position-absolute invisible">
+                                    <span class="pe-3">Add to cart</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm">
+                            <div class="card bg-transparent border-0">
+                                <img src="img/item-4.jpg" alt="">
+                                <div class="card-body px-0">
+                                    <p class="card-text fw-bolder">Julia</p>
+                                    <p class="card-text">€99.00 <span
+                                            class="text-gray3 text-decoration-line-through">€119.00</span></p>
+                                </div>
+                                <button class="btn fit-content bg-white border-0 rounded-pill px-4 py-3
+                                                                        position-absolute invisible">
+                                    <span class="pe-3">Add to cart</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm">
+                            <div class="card bg-transparent border-0">
+                                <img src="img/item-5.jpg" alt="">
+                                <div class="card-body px-0">
+                                    <p class="card-text fw-bolder">Julia</p>
+                                    <p class="card-text">€99.00 <span
+                                            class="text-gray3 text-decoration-line-through">€119.00</span></p>
+                                </div>
+                                <button class="btn fit-content bg-white border-0 rounded-pill px-4 py-3
+                                                                        position-absolute invisible">
+                                    <span class="pe-3">Add to cart</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm">
+                            <div class="card bg-transparent border-0">
+                                <img src="img/item-6.jpg" alt="">
+                                <div class="card-body px-0">
+                                    <p class="card-text fw-bolder">Julia</p>
+                                    <p class="card-text">€99.00 <span
+                                            class="text-gray3 text-decoration-line-through">€119.00</span></p>
+                                </div>
+                                <button class="btn fit-content bg-white border-0 rounded-pill px-4 py-3
+                                                                        position-absolute invisible">
+                                    <span class="pe-3">Add to cart</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm">
+                            <div class="card bg-transparent border-0">
+                                <img src="img/item-7.jpg" alt="">
+                                <div class="card-body px-0">
+                                    <p class="card-text fw-bolder">Julia</p>
+                                    <p class="card-text">€99.00 <span
+                                            class="text-gray3 text-decoration-line-through">€119.00</span></p>
+                                </div>
+                                <button class="btn fit-content bg-white border-0 rounded-pill px-4 py-3
+                                                                        position-absolute invisible">
+                                    <span class="pe-3">Add to cart</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm">
+                            <div class="card bg-transparent border-0">
+                                <img src="img/item-8.jpg" alt="">
+                                <div class="card-body px-0">
+                                    <p class="card-text fw-bolder">Julia</p>
+                                    <p class="card-text">€99.00 <span
+                                            class="text-gray3 text-decoration-line-through">€119.00</span></p>
+                                </div>
+                                <button class="btn fit-content bg-white border-0 rounded-pill px-4 py-3
+                                                                        position-absolute invisible">
+                                    <span class="pe-3">Add to cart</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-10 col-sm">
+                            <div class="card bg-transparent border-0">
+                                <img src="img/item-9.jpg" alt="">
+                                <div class="card-body px-0">
+                                    <p class="card-text fw-bolder">Julia</p>
+                                    <p class="card-text">€99.00 <span
+                                            class="text-gray3 text-decoration-line-through">€119.00</span></p>
+                                </div>
+                                <button class="btn fit-content bg-white border-0 rounded-pill px-4 py-3
+                                                                        position-absolute invisible">
+                                    <span class="pe-3">Add to cart</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- pagination -->
+                    <nav aria-label="Page navigation example" class="pb-5">
+                        <ul class="pagination justify-content-start">
+                            <li class="d-none page-item disabled">
+                                <a class="page-link text-black">Previous</a>
+                            </li>
+                            <li class="page-item g-0 rounded-circle">
+                                <a class="page-link bg-transparent border-0 mx-0 text-black" href="#">1</a>
+                            </li>
+                            <li class="page-item g-0 rounded-circle">
+                                <a class="page-link bg-transparent border-0 mx-0 text-black" href="#">2</a>
+                            </li>
+                            <li class="page-item g-0 rounded-circle">
+                                <a class="page-link  bg-transparent border-0 mx-0 text-black" href="#">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+
+            </div>
+        </main>
+    </div>
+
+
+    <footer class=" footer bg-gray6 pt-5">
+        <div class="row row-cols-2 row-cols-sm-4 margined">
+
+            <div class="col pe-0">
+                <p class="pb-4 text-gray3">About us</p>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Our company</a>
+                    </li>
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Our history</a>
+                    </li>
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Contact</a>
+                    </li>
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Jobs</a></li>
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Journal</a>
+                    </li>
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Store
+                            Locations</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col pe-0">
+                <p class="pb-4 text-gray3">How can we help</p>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">FAQs</a></li>
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Order
+                            tracking</a></li>
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Terms &
+                            Conditions</a>
+                    </li>
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Privacy
+                            Policy</a></li>
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Returns &
+                            Refunds</a>
+                    </li>
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Support</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="col pe-0 pt-3 pt-sm-0">
+                <p class="pb-4 text-gray3">Shop</p>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Tops</a></li>
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Accessories</a>
+                    </li>
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Jeans</a></li>
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Jackets</a>
+                    </li>
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Shoes</a></li>
+                </ul>
+            </div>
+
+            <div class="col pe-0 pt-3 pt-sm-0">
+                <p class="pb-4 text-gray3">Security system</p>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">PCI security
+                            standards</a>
+                    </li>
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Protect card
+                            owner</a>
+                    </li>
+                    <li class="nav-item mb-2"> <a href="#" class="nav-link p-0  text-black ">Encrypted
+                            network</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="row margined">
+            <p class="text-gray3 py-5">Copyright © 2020 Nordic Coder. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
